@@ -32,13 +32,13 @@ def random_filename():
 
 def random_art():
     img_array = np.full((MAX_X, MAX_Y, 3), COLOR_WHITE, dtype = np.uint8)
-    image = Image.fromarray(img_array)
+    canvas = Image.fromarray(img_array)
 
     # Create figure and axes
-    fig, ax = plt.subplots()
+    _, ax = plt.subplots()
 
     # Display the image
-    ax.imshow(image)
+    ax.imshow(canvas)
 
     for _ in range(100):
         # Create a Rectangle patch
