@@ -40,7 +40,7 @@ def random_art():
     # Display the image
     ax.imshow(image)
 
-    for i in range(50):
+    for _ in range(100):
         # Create a Rectangle patch
         (x, y) = random_x_y()
         (width, height) = random_width_height(x, y)
