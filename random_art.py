@@ -17,7 +17,7 @@ def random_x_y():
     return random_coord(MAX_X), random_coord(MAX_Y)
 
 def random_width_height(x, y):
-    factor = 1
+    factor = 4
     def random_dim(coord, max_dim):
         return min(max_dim, int(random.random()*(max_dim-coord)))
     return (random_dim(x, MAX_X)/factor, random_dim(y, MAX_Y)/factor)
